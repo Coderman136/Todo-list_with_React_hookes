@@ -22,23 +22,19 @@ function App() {
 
         <div className = "app-wrapper">
 
-          <div className="wrapper">
-            <div>
+        <div>
           <Header/>
         </div>
+
         <Form input={input}
         setInput = {setInput}
         todos= {todos}
         setTodos = {setTodos}
         editTodo = {editTodo}
         setEditTodo= {setEditTodo}/>
-        <TodoList todos={todos} setTodos = {setTodos} setEditTodo= {setEditTodo}/>
-        </div>
-        
-          </div>
-        
+        <TodoList todos={todos} setTodos = {setTodos} setEditTodo= {setEditTodo} />
 
-      
+        </div>
       
     </div>
   )
