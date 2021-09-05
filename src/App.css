@@ -123,6 +123,10 @@ button:focus {
 
 @media (max-width: 480px) {
 
+ .header h1 {
+  font-size: 2em;
+ }
+
  .app-wrapper {
   max-width: 80vw;
  }
