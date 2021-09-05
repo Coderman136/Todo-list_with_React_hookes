@@ -18,18 +18,28 @@ function App() {
 
   return (
     <div className="container">
-      <div className = "app-wrapper">
-        <div>
+      
+
+        <div className = "app-wrapper">
+
+          <div className="wrapper">
+            <div>
           <Header/>
         </div>
-      <Form input={input}
-      setInput = {setInput}
-      todos= {todos}
-      setTodos = {setTodos}
-      editTodo = {editTodo}
-      setEditTodo= {setEditTodo}/>
-      <TodoList todos={todos} setTodos = {setTodos} setEditTodo= {setEditTodo}/>
-      </div>
+        <Form input={input}
+        setInput = {setInput}
+        todos= {todos}
+        setTodos = {setTodos}
+        editTodo = {editTodo}
+        setEditTodo= {setEditTodo}/>
+        <TodoList todos={todos} setTodos = {setTodos} setEditTodo= {setEditTodo}/>
+        </div>
+        
+          </div>
+        
+
+      
+      
     </div>
   )
 }

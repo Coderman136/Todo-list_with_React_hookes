@@ -1,29 +1,40 @@
-* {
+*{
+ padding: 0;
  margin: 0;
- padding:0;
+}
+
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+html {
+  height: -webkit-fill-available;
 }
 
 .container {
+ height: 98.3vh;
  background: url('https://www.ubuntupit.com/wp-content/uploads/2019/06/best-to-do-list-apps-for-Android.jpg');
- width:100%;
- min-height: 100%;
- padding: 35px 0;
  display: flex;
  justify-content: center;
  align-items: center;
 }
 
+
 .app-wrapper {
- /* background-color: #12343b; */
  background: url('https://thomastsopanakis.com/wp-content/uploads/2016/12/mzl-tspthrcp-1.png');
- min-width: 450px;
- min-height: 650px;
  padding:30px;
+ height: 80vh;
+ margin: 10px auto;
  box-sizing: border-box;
  border-radius: 30px;
  box-shadow: 3px 6px 40px #000;
- margin-bottom: 10px;
+ display: flex;
+
 }
+
+/* .wrapper {
+ border: 3px solid red;
+} */
 
 .header h1 {
  color: #E2071C;
@@ -35,9 +46,8 @@
 
 .task-input {
  outline: none;
- width: 260px;
- padding:15px;
- margin-right: 25px;
+ width: 100%;
+ padding:15px 0;
  font-size: 20px;
  color: #ccc;
  background-color: #0000;
@@ -47,7 +57,8 @@
 
 .button-add {
  width:70px;
- padding: 15px 15px;
+ margin: 10px;
+ padding: 5px;
  font-size: 20px;
  border-radius: 10px;
  border: 0;
@@ -110,6 +121,12 @@ button:focus {
 }
 
 
+@media (max-width: 480px) {
+
+ .app-wrapper {
+  max-width: 80vw;
+ }
+}
 
 
 
